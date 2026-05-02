@@ -527,7 +527,7 @@ for mc_run in range(Parameters.number_of_mc_runs):
                 
                 planning_nonmyopically.append(False)
                 
-            cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+            cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
             all_the_tree_roots.append(root)
             
             information_shared.append(True)
@@ -543,7 +543,7 @@ for mc_run in range(Parameters.number_of_mc_runs):
                 
                 planning_nonmyopically.append(False)
                 
-            cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+            cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
             all_the_tree_roots.append(root)
             
             information_shared.append(False)
@@ -865,7 +865,7 @@ if MCTS1 == True:
                     
                     planning_nonmyopically.append(True)
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(True)
@@ -882,7 +882,7 @@ if MCTS1 == True:
                     planning_nonmyopically.append(True)
               
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(False)
@@ -1203,7 +1203,7 @@ if MCTS2 == True:
                     
                     planning_nonmyopically.append(True)
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(True)
@@ -1220,7 +1220,7 @@ if MCTS2 == True:
                     planning_nonmyopically.append(True)
               
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(False)
@@ -1539,7 +1539,7 @@ if MCTS3 == True:
                     
                     planning_nonmyopically.append(True)
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(True)
@@ -1556,7 +1556,7 @@ if MCTS3 == True:
                     planning_nonmyopically.append(True)
               
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(False)
@@ -1873,7 +1873,7 @@ if MCTS4 == True:
                     
                     planning_nonmyopically.append(True)
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(True)
@@ -1890,7 +1890,7 @@ if MCTS4 == True:
                     planning_nonmyopically.append(True)
               
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(False)
@@ -2205,7 +2205,7 @@ if MCTS5 == True:
                     
                     planning_nonmyopically.append(True)
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_full_jointly_calculated_MCTS([oSensor1, oSensor2],  prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(True)
@@ -2222,7 +2222,7 @@ if MCTS5 == True:
                     planning_nonmyopically.append(True)
               
                     
-                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'KLD')
+                cost_of_each_combination, root = oMajorSensor.manage_multiple_sensors_mb_individually_MCTS([oSensor1, oSensor2], prob_existence, means_existing, covariances_existing, cost_function = 'GOSPA')
                 all_the_tree_roots.append(root)
                 
                 information_shared.append(False)
