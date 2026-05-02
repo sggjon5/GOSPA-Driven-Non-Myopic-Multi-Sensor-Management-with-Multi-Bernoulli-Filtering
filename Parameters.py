@@ -14,7 +14,7 @@ number_of_timesteps = 200
 surveillance_area = np.array([[-250, 250],
                               [-250, 250]])
 
-number_of_mc_runs = 50
+number_of_mc_runs = 1
 
 #########################################
 #   S E N S O R   P A R A M E T E R S   #
